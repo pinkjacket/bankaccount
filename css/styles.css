@@ -1,0 +1,13 @@
+#show-ticket {
+  display: none;
+  background-color: #e8c192
+}
+
+.contact {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
