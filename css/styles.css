@@ -1,13 +1,59 @@
-#show-ticket {
-  display: none;
-  background-color: #e8c192
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.contact {
-  cursor: pointer;
-  color: #0088cc;
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-color: lightgray;
 }
 
-.contact:hover {
-  text-decoration: underline;
+.account {
+  border: 3px solid #4AE899;
+}
+
+h2 {
+  background-color: #4AE899;
+  color: #319C7D;
+}
+.two {
+  grid-column: 2 / 2;
+  grid-row: 1;
+  background-color: lightgray;
+  border: 3px solid #4AE899;
+}
+
+.three {
+
+  grid-row: 2;
+  text-align: center;
+  grid-column: 1;
+}
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p {
+  border-radius: 2px black dotted;
+}
+input {
+  float: right;
+}
+.account {
+  border: 3px solid #4AE899;
+  background-color: lightgray;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.amount {
+  border: 3px solid #4AE899;
+  background-color: lightgray;
+  padding-left: 5%;
+  padding-right: 5%;
 }

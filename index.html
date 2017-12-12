@@ -9,20 +9,34 @@
   </head>
   <body>
     <h1>Epicodus Credit Union</h1>
+    <div class="wrapper">
+
     <div class="account">
       <h2>Account</h2>
-      <p>Name: <input type="text" name="name" value="name"></p>
-      <p>Initial Deposit: <input type="number" name="initial deposit" value="-"></p>
+      <form class="formaccount" action="index.html" method="post">
+        <div class="text">
+        <p>Name: <input id="name" type="text" name="name" value="Name"></p>
+        <p>Initial Deposit: <input id="initialdepost" type="number" name="initial deposit" value="$"></p>
+      <button type="button" name="button">Go</button>
+    </div>
+    </form>
+
     </div>
     <div class="amount">
-      <h2>Deposit or withdraw funds</h2>
-      <p>Deposit amount: <input type="number" name="deposit" value="-"></p>
-      <p>Withdrawal amount: <input type="number" name="withdrawal" value="-"></p>
+      <form class="formDW" action="index.html" method="post">
+        <h2>Deposit or withdraw funds</h2>
+        <div class="text">
+        <p>Deposit amount: <input id="deposit" type="number" name="deposit" value="$"></p>
+        <p>Withdrawal amount: <input id="withdrawal" type="number" name="withdrawal" value="$"></p>
+        <button type="button" name="button">Go</button>
+      </form>
+    </div>
     </div>
     <div class="footer">
       <h3>Current Balance:</h3>
       <div class="balance">
-        <p><span id="balanceoutput"></span></p>
+        <p>$<span id="balanceoutput"></span></p>
+      </div>
       </div>
     </div>
   </body>
