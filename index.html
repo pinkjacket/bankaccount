@@ -16,8 +16,8 @@
       <form class="formaccount" action="index.html" method="post">
         <div class="text">
         <p>Name: <input id="name" type="text" name="name" value="Name"></p>
-        <p>Initial Deposit: <input id="initialdepost" type="number" name="initial deposit" value="$"></p>
-      <button type="button" name="button">Go</button>
+        <p>Initial Deposit: <input id="initialdepost" type="number" name="initial deposit" min="0" value="0"></p>
+      <button type="submit" name="button">Go</button>
     </div>
     </form>
 
@@ -26,9 +26,9 @@
       <form class="formDW" action="index.html" method="post">
         <h2>Deposit or withdraw funds</h2>
         <div class="text">
-        <p>Deposit amount: <input id="deposit" type="number" name="deposit" value="$"></p>
-        <p>Withdrawal amount: <input id="withdrawal" type="number" name="withdrawal" value="$"></p>
-        <button type="button" name="button">Go</button>
+        <p>Deposit amount: <input id="deposit" type="number" name="deposit" min="0" value="0"></p>
+        <p>Withdrawal amount: <input id="withdrawal" type="number" name="withdrawal" max="0" value="0"></p>
+        <button type="submit" name="button">Go</button>
       </form>
     </div>
     </div>

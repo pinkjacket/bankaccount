@@ -18,6 +18,7 @@
 h2 {
   background-color: #4AE899;
   color: #319C7D;
+  height: 100%;
 }
 .two {
   grid-column: 2 / 2;
